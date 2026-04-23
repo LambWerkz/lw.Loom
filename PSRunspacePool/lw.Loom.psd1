@@ -28,7 +28,7 @@ Description = 'A PowerShell module for managing runspace pools.'
 PowerShellVersion = '5.1'
 
 # Functions to export from this module
-FunctionsToExport = @('New-RunspacePool', 'Get-RunspacePool', 'Remove-RunspacePool', 'Invoke-RunspaceCommand', 'Get-RunspaceCommand', 'Receive-RunspaceCommand', 'Stop-RunspaceCommand')
+FunctionsToExport = @('New-LoomPool', 'Get-LoomPool', 'Remove-LoomPool', 'Invoke-LoomCommand', 'Get-LoomCommand', 'Receive-LoomCommand', 'Stop-LoomCommand')
 
 # Cmdlets to export from this module
 CmdletsToExport = @()
@@ -40,15 +40,15 @@ VariablesToExport = '*'
 AliasesToExport = @()
 
 # Private data to pass to the module specified in RootModule/ModuleToProcess.
-PrivateData = @{
+    PrivateData      = @{
 
-    PSData = @{
+        PSData = @{
 
-        # Tags applied to this module.
-        Tags = @('Runspace', 'Pool', 'PowerShell')
+            # Tags applied to this module.
+            Tags = @('Loom','Runspace', 'Pool', 'PowerShell')
 
-    } # End of PSData hashtable
+        } # End of PSData hashtable
 
-} # End of PrivateData hashtable
+    } # End of PrivateData hashtable
 
 }
