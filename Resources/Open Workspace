@@ -1,0 +1,19 @@
+PSRunspacePool/
+├── PSRunspacePool.psd1 # Module manifest
+├──PSRunspacePool.psm1 # Root module (dot-sources everything)
+├──Private/ │
+            ├── Initialize-PoolRegistry.ps1  # Creates module-scoped ConcurrentDictionary
+        │   ├── Resolve-UsingVariables.ps1   # AST parser for $using: scope extraction
+        │   └── ConvertTo-RunspaceResult.ps1 # Merges output+ streams into unified result
+        ├── Public/ │
+        ├── New-RunspacePool.ps1 │
+        ├── Get-RunspacePool.ps1 │
+        ├── Remove-RunspacePool.ps1 │
+        ├── Invoke-RunspaceCommand.ps1
+        │   ├── Get-RunspaceCommand.ps1
+        │   ├── Receive-RunspaceCommand.ps1
+        │   └── Stop-RunspaceCommand.ps1
+        └── Tests/
+            ├── New-RunspacePool.Tests.ps1
+            ├── Invoke-RunspaceCommand.Tests.ps1
+            └── ...
