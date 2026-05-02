@@ -1,7 +1,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = 'PSRunspacePool.psm1'
+RootModule = 'lw.Loom.psm1'
 
 # Version number of this module.
 ModuleVersion = '1.0.0'
@@ -22,7 +22,7 @@ CompanyName = 'LambWerkz'
 Copyright = '(c) 2023 LambWerkz. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'A PowerShell module for managing runspace pools.'
+Description = 'A PowerShell module for managing named runspace pools and asynchronous commands.'
 
 # Minimum version of the PowerShell engine required by this module
 PowerShellVersion = '5.1'
@@ -34,7 +34,7 @@ FunctionsToExport = @('New-LoomPool', 'Get-LoomPool', 'Remove-LoomPool', 'Invoke
 CmdletsToExport = @()
 
 # Variables to export from this module
-VariablesToExport = '*'
+VariablesToExport = @()
 
 # Aliases to export from this module
 AliasesToExport = @()

@@ -7,4 +7,4 @@ foreach ($file in @($Private + $Public)) {
 }
 
 # Initialize the registry at module load time
-Initialize-PoolRegistry
+Initialize-LoomPoolRegistry
